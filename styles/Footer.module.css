@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    background-color: hsl(190, 80%, 20%);
+    color: #fff;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    margin-top: 2em;
+    border-top: 3px solid #ccb;
+}
+
+.footer span {
+    font-weight: bold;
+}
+
+.footer a {
+    color: unset;
+    text-decoration: none;
+    transition: .7s;
+    border-bottom:  2px solid transparent;
+}
+
+.footer a:hover {
+    border-color: #f00;
+}
