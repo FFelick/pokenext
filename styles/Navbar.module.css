@@ -3,10 +3,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 1em 1.2em;
-    margin-bottom: 2em;
-    background-color: hsl(190, 80%, 20%);
-    color: #fff;
-    border-bottom: 3px solid #ccb;
+    margin-bottom: 0em;
+    background-color: var(--primary-color);
+    color: var(--brand-light);
+    border-bottom: 3px solid var(--brand-dark);
 }
 
 .logo {
@@ -29,7 +29,7 @@
 }
 
 .link_items a {
-    color: #fff;
+    color: var(--brand-light);
     text-decoration: none;
     padding: 5px;
     transition: .7s;
@@ -38,5 +38,6 @@
 }
 
 .link_items a:hover {
-    border-color: #f00;
+    border-color: var( --brand-dark-2);
+    font-weight: bold;
 }

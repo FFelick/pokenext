@@ -1,13 +1,13 @@
 .footer {
     display: flex;
-    background-color: hsl(190, 80%, 20%);
-    color: #fff;
+    background-color: var(--primary-color);
+    color:var(--brand-light);
     align-items: center;
     flex-direction: column;
     justify-content: center;
     height: 150px;
-    margin-top: 2em;
-    border-top: 3px solid #ccb;
+    margin-top: -1em;
+    border-top: 3px solid var(--brand-dark);
 }
 
 .footer span {
@@ -18,9 +18,10 @@
     color: unset;
     text-decoration: none;
     transition: .7s;
-    border-bottom:  2px solid transparent;
+
 }
 
 .footer a:hover {
-    border-color: #f00;
+    color:var(--brand-dark-2);
+    font-size: 19px;
 }

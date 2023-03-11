@@ -1,0 +1,30 @@
+.about {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+
+}
+
+.about h1 {
+    font-size: 20px;
+
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+.about p {
+    margin-bottom: 1.5em;
+    text-align: justify;
+}
+
+.about2 {
+    margin: 1em;
+    width: 90%;
+}
+
+.about2 a {
+    text-decoration: none;
+    color: var(--brand-dark);
+}
