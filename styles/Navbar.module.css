@@ -38,6 +38,6 @@
 }
 
 .link_items a:hover {
-    border-color: var( --brand-dark-2);
-    font-weight: bold;
+    border-color: var(--brand-dark-2);
+
 }

@@ -17,14 +17,20 @@
 .about p {
     margin-bottom: 1.5em;
     text-align: justify;
+    line-height: 1.4em;
 }
 
 .about2 {
     margin: 1em;
     width: 90%;
+    margin-bottom: 10em;
 }
 
 .about2 a {
     text-decoration: none;
     color: var(--brand-dark);
+}
+
+.about3 {
+margin-left: 30%;
 }
