@@ -6,16 +6,41 @@
     padding: 2em 1em;
     margin-bottom: 2em;
     width: 23%;
+    border-radius: 1em;
+    border: 2px solid var(--brand-dark);
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+    background-color: var(--primary-color);
+    color: var(--brand-light);
 }
 
 .id {
-
+    margin: 1em 0;
+    background-color: var(--brand-dark);
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .title {
+    text-transform: capitalize;
+    margin-bottom: 1em;
+    font-size: 1.4em;
 
 }
 
 .btm {
+    text-decoration: none;
+    background-color: var(--brand-dark);
+    color: var(--brand-light);
+    padding: .5em 1.0em ;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s;
+}
 
+.btm:hover {
+    background-color:var(--brand-dark-2);
+    color: var(--brand-dark);
 }
