@@ -31,3 +31,15 @@
     max-width: 1100px;
     margin: 0 auto;
 }
+
+.p404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--brand-dark);
+}
+
+.p404 p {
+    font-size: 22px;
+}

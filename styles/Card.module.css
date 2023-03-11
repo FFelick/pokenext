@@ -1,5 +1,11 @@
 .card {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em 1em;
+    margin-bottom: 2em;
+    width: 23%;
 }
 
 .id {
@@ -11,5 +17,5 @@
 }
 
 .btm {
-    
+
 }
