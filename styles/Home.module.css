@@ -1,0 +1,33 @@
+.container {
+    background-color: var(--brand-light);
+}
+.title_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0.5em;
+    margin-bottom: 2em;
+}
+
+.title_container h1 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 3em;
+    margin-right: 0.4em;
+}
+
+.title_container span {
+    color: var(--brand-dark-2);
+    -webkit-text-stroke-width: 0.05em;
+    -webkit-text-stroke-color: var(--brand-dark);
+}
+
+.pokemon_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
