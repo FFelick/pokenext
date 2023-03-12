@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 
@@ -32,9 +33,10 @@ export default function Home({ pokemons }) {
           <h1>Poke<span>Next</span></h1>
           <Image
             src="/images/pokeball.png"
-            width="50"
-            height="50"
-            atl="PokeNext" />
+            width={50}
+            height={50}
+            atl="PokeNext"
+          />
         </div>
         <div className={styles.pokemon_container}>
           {pokemons.map((pokemon) => (
