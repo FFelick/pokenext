@@ -4,7 +4,7 @@ import styles from "@/styles/Pokemon.module.css"
 
 export const getStaticPaths = async () => {
 
-    const maxPokemons = 250
+    const maxPokemons = 252
     const api = 'https://pokeapi.co/api/v2/pokemon/'
 
 
@@ -14,7 +14,7 @@ export const getStaticPaths = async () => {
     // paramentos
     const paths = data.results.map((pokemon, index) => {
         return {
-            params: { pokemonid: (index + 1).toString() },
+            params: { pokemonId: (index + 1).toString() },
         }
     })
 
@@ -26,7 +26,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
 
-    const id = context.params.pokemonid
+    const id = context.params.pokemonId
 
     const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
 
@@ -43,8 +43,8 @@ export default function Pokemon({ pokemon }) {
                 <h1 className={styles.title}>{pokemon.name}</h1>
                 <Image
                     src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
-                    width="200"
-                    height="200"
+                    width={200}
+                    height={200}
                     alt={pokemon.name}
                 />
                 <div>
@@ -63,7 +63,7 @@ export default function Pokemon({ pokemon }) {
                             <h4>Altura:</h4>
                             <p>{pokemon.height * 10} cm</p>
                         </div>
-                        <div className={styles.data_weight}>
+                        <div>
                             <h4>Peso:</h4>
                             <p>{pokemon.weight / 10} kg</p>
                         </div>
