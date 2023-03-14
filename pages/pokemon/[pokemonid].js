@@ -5,16 +5,18 @@ import styles from "@/styles/Pokemon.module.css"
 export const getStaticPaths = async () => {
 
     const maxPokemons = 300
-    const api = 'https://pokeapi.co/api/v2/pokemon/'
+
+    const api = `https://pokeapi.co/api/v2/pokemon/`
 
 
     const res = await fetch(`${api}/?limit=${maxPokemons}`)
+
     const data = await res.json()
 
     // paramentos
     const paths = data.results.map((pokemon, index) => {
         return {
-            params: { pokemonId: (index + 1).toString() },
+            params: { pokemonid: index.toString() },
         }
     })
 
@@ -26,17 +28,19 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
 
-    const id = context.params.pokemonId
+    const id = context.params.pokemonid
 
     const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
 
     const data = await res.json()
+
     return {
         props: { pokemon: data },
     }
 }
 
 export default function Pokemon({ pokemon }) {
+    console.log(pokemon)
     return (
         <>
             <div className={styles.pokemon_container}>
