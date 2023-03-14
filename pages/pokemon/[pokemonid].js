@@ -16,7 +16,7 @@ export const getStaticPaths = async () => {
     // paramentos
     const paths = data.results.map((pokemon, index) => {
         return {
-            params: { pokemonid: index.toString() },
+            params: { pokemonid: (index+1).toString() },
         }
     })
 
@@ -40,7 +40,7 @@ export const getStaticProps = async (context) => {
 }
 
 export default function Pokemon({ pokemon }) {
-    console.log(pokemon)
+
     return (
         <>
             <div className={styles.pokemon_container}>
