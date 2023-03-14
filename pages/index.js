@@ -6,7 +6,7 @@ import Card from '../components/Card'
 
 export async function getStaticProps() {
 
-  const maxPokemons = 22
+  const maxPokemons = 300
   const api = 'https://pokeapi.co/api/v2/pokemon/'
 
   //Requisição

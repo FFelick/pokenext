@@ -4,7 +4,7 @@ import styles from "@/styles/Pokemon.module.css"
 
 export const getStaticPaths = async () => {
 
-    const maxPokemons = 22
+    const maxPokemons = 300
     const api = 'https://pokeapi.co/api/v2/pokemon/'
 
 
